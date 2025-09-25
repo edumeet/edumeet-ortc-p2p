@@ -92,7 +92,7 @@ export function extractRtpCapabilities({ sdpObject }: { sdpObject: sdpTransform.
 			}
 
 			if (String(fb.payload) !== '*') {
-				const codec = codecsMap.get(fb.payload);
+				const codec = codecsMap.get(parseInt(String(fb.payload)));
 
 				if (!codec) {
 					continue;

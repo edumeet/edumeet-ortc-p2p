@@ -556,7 +556,6 @@ export abstract class HandlerInterface extends EnhancedEventEmitter<HandlerEvent
 
 		logger.debug('onRemoteIceCandidate() [candidate:%o]', candidate);
 
-		// @ts-expect-error Object is possibly 'null'.
 		await this.pc.addIceCandidate(candidate);
 	}
 

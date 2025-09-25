@@ -196,7 +196,7 @@ export class DataProducer<
 	 *
 	 * @param {String|Blob|ArrayBuffer|ArrayBufferView} data.
 	 */
-	send(data: ArrayBufferView): void {
+	send(data: ArrayBuffer): void {
 		logger.debug('send()');
 
 		if (this._closed) {

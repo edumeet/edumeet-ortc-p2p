@@ -1,2 +1,5 @@
 /node_modules
-/lib
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+.pnp.*

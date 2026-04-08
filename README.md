@@ -62,6 +62,26 @@ await sendTransport1.produce({ track });
 await sendTransport2.produce({ track });
 ```
 
+## Development
+
+This project uses Yarn 4 via Corepack.
+
+```bash
+$ corepack enable
+$ yarn install
+$ yarn build
+```
+
+## Building from source
+
+```bash
+$ corepack enable
+$ yarn install --immutable
+$ yarn build
+```
+
+The compiled output is in the `lib/` directory.
+
 ## License
 
 [ISC](./LICENSE)
